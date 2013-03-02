@@ -1,0 +1,125 @@
+\hypertarget{classRemoteAtCommandRequest}{\section{\-Remote\-At\-Command\-Request \-Class \-Reference}
+\label{classRemoteAtCommandRequest}\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}}
+}
+
+
+{\ttfamily \#include $<$\-X\-Bee.\-h$>$}
+
+\-Inheritance diagram for \-Remote\-At\-Command\-Request\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classRemoteAtCommandRequest}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRemoteAtCommandRequest_ac6977fe584bab7d7414b0c45d1ae37cc}{\-Remote\-At\-Command\-Request} (uint16\-\_\-t remote\-Address16, uint8\-\_\-t $\ast$command, uint8\-\_\-t $\ast$command\-Value, uint8\-\_\-t command\-Value\-Length)
+\item 
+\hyperlink{classRemoteAtCommandRequest_ae8139e39010dcd8956a4281109885a81}{\-Remote\-At\-Command\-Request} (uint16\-\_\-t remote\-Address16, uint8\-\_\-t $\ast$command)
+\item 
+\hyperlink{classRemoteAtCommandRequest_ae49de42cdec0b9689882e2372a3bae1d}{\-Remote\-At\-Command\-Request} (\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \&remote\-Address64, uint8\-\_\-t $\ast$command, uint8\-\_\-t $\ast$command\-Value, uint8\-\_\-t command\-Value\-Length)
+\item 
+\hyperlink{classRemoteAtCommandRequest_aa01b3f59d62d444ad78d6f1bbf8124aa}{\-Remote\-At\-Command\-Request} (\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \&remote\-Address64, uint8\-\_\-t $\ast$command)
+\item 
+\hypertarget{classRemoteAtCommandRequest_a1802fa7c5d644184f19fcd3da839f08a}{uint16\-\_\-t {\bfseries get\-Remote\-Address16} ()}\label{classRemoteAtCommandRequest_a1802fa7c5d644184f19fcd3da839f08a}
+
+\item 
+\hypertarget{classRemoteAtCommandRequest_a91d4ee0fa25a634e419df1b0059f6073}{void {\bfseries set\-Remote\-Address16} (uint16\-\_\-t remote\-Address16)}\label{classRemoteAtCommandRequest_a91d4ee0fa25a634e419df1b0059f6073}
+
+\item 
+\hypertarget{classRemoteAtCommandRequest_ab6c602ded638f7740ac69319915e0389}{\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \& {\bfseries get\-Remote\-Address64} ()}\label{classRemoteAtCommandRequest_ab6c602ded638f7740ac69319915e0389}
+
+\item 
+\hypertarget{classRemoteAtCommandRequest_abf42b8f760f1f1959de090f4493e928b}{void {\bfseries set\-Remote\-Address64} (\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \&remote\-Address64)}\label{classRemoteAtCommandRequest_abf42b8f760f1f1959de090f4493e928b}
+
+\item 
+\hypertarget{classRemoteAtCommandRequest_ad9098bc0358fa44f73c0cc51bc244bf3}{bool {\bfseries get\-Apply\-Changes} ()}\label{classRemoteAtCommandRequest_ad9098bc0358fa44f73c0cc51bc244bf3}
+
+\item 
+\hypertarget{classRemoteAtCommandRequest_aab7cf2bf1ca644a17bede9abd3929acd}{void {\bfseries set\-Apply\-Changes} (bool apply\-Changes)}\label{classRemoteAtCommandRequest_aab7cf2bf1ca644a17bede9abd3929acd}
+
+\item 
+uint8\-\_\-t \hyperlink{classRemoteAtCommandRequest_a0e576cf564ebd5a82cb2ed05239a856a}{get\-Frame\-Data} (uint8\-\_\-t pos)
+\item 
+uint8\-\_\-t \hyperlink{classRemoteAtCommandRequest_a1d78334a8924b0a0e06de6ef3a09c24f}{get\-Frame\-Data\-Length} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRemoteAtCommandRequest_a72668f0e22df605d5b32141bd7ca0256}{static \hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} {\bfseries broadcast\-Address64} = \hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64}(0x0, B\-R\-O\-A\-D\-C\-A\-S\-T\-\_\-\-A\-D\-D\-R\-E\-S\-S)}\label{classRemoteAtCommandRequest_a72668f0e22df605d5b32141bd7ca0256}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Represents an \-Remote \-A\-T \-Command \-T\-X packet \-The command is used to configure a remote \hyperlink{classXBee}{\-X\-Bee} radio 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classRemoteAtCommandRequest_ac6977fe584bab7d7414b0c45d1ae37cc}{\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}}
+\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!RemoteAtCommandRequest@{\-Remote\-At\-Command\-Request}}
+\subsubsection[{\-Remote\-At\-Command\-Request}]{\setlength{\rightskip}{0pt plus 5cm}\-Remote\-At\-Command\-Request\-::\-Remote\-At\-Command\-Request (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{remote\-Address16, }
+\item[{uint8\-\_\-t $\ast$}]{command, }
+\item[{uint8\-\_\-t $\ast$}]{command\-Value, }
+\item[{uint8\-\_\-t}]{command\-Value\-Length}
+\end{DoxyParamCaption}
+)}}\label{classRemoteAtCommandRequest_ac6977fe584bab7d7414b0c45d1ae37cc}
+\-Creates a \hyperlink{classRemoteAtCommandRequest}{\-Remote\-At\-Command\-Request} with 16-\/bit address to set a command. 64-\/bit address defaults to broadcast and apply\-Changes is true. \hypertarget{classRemoteAtCommandRequest_ae8139e39010dcd8956a4281109885a81}{\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}}
+\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!RemoteAtCommandRequest@{\-Remote\-At\-Command\-Request}}
+\subsubsection[{\-Remote\-At\-Command\-Request}]{\setlength{\rightskip}{0pt plus 5cm}\-Remote\-At\-Command\-Request\-::\-Remote\-At\-Command\-Request (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{remote\-Address16, }
+\item[{uint8\-\_\-t $\ast$}]{command}
+\end{DoxyParamCaption}
+)}}\label{classRemoteAtCommandRequest_ae8139e39010dcd8956a4281109885a81}
+\-Creates a \hyperlink{classRemoteAtCommandRequest}{\-Remote\-At\-Command\-Request} with 16-\/bit address to query a command. 64-\/bit address defaults to broadcast and apply\-Changes is true. \hypertarget{classRemoteAtCommandRequest_ae49de42cdec0b9689882e2372a3bae1d}{\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}}
+\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!RemoteAtCommandRequest@{\-Remote\-At\-Command\-Request}}
+\subsubsection[{\-Remote\-At\-Command\-Request}]{\setlength{\rightskip}{0pt plus 5cm}\-Remote\-At\-Command\-Request\-::\-Remote\-At\-Command\-Request (
+\begin{DoxyParamCaption}
+\item[{{\bf \-X\-Bee\-Address64} \&}]{remote\-Address64, }
+\item[{uint8\-\_\-t $\ast$}]{command, }
+\item[{uint8\-\_\-t $\ast$}]{command\-Value, }
+\item[{uint8\-\_\-t}]{command\-Value\-Length}
+\end{DoxyParamCaption}
+)}}\label{classRemoteAtCommandRequest_ae49de42cdec0b9689882e2372a3bae1d}
+\-Creates a \hyperlink{classRemoteAtCommandRequest}{\-Remote\-At\-Command\-Request} with 64-\/bit address to set a command. 16-\/bit address defaults to broadcast and apply\-Changes is true. \hypertarget{classRemoteAtCommandRequest_aa01b3f59d62d444ad78d6f1bbf8124aa}{\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}}
+\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!RemoteAtCommandRequest@{\-Remote\-At\-Command\-Request}}
+\subsubsection[{\-Remote\-At\-Command\-Request}]{\setlength{\rightskip}{0pt plus 5cm}\-Remote\-At\-Command\-Request\-::\-Remote\-At\-Command\-Request (
+\begin{DoxyParamCaption}
+\item[{{\bf \-X\-Bee\-Address64} \&}]{remote\-Address64, }
+\item[{uint8\-\_\-t $\ast$}]{command}
+\end{DoxyParamCaption}
+)}}\label{classRemoteAtCommandRequest_aa01b3f59d62d444ad78d6f1bbf8124aa}
+\-Creates a \hyperlink{classRemoteAtCommandRequest}{\-Remote\-At\-Command\-Request} with 16-\/bit address to query a command. 16-\/bit address defaults to broadcast and apply\-Changes is true. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classRemoteAtCommandRequest_a0e576cf564ebd5a82cb2ed05239a856a}{\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!get\-Frame\-Data@{get\-Frame\-Data}}
+\index{get\-Frame\-Data@{get\-Frame\-Data}!RemoteAtCommandRequest@{\-Remote\-At\-Command\-Request}}
+\subsubsection[{get\-Frame\-Data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-Remote\-At\-Command\-Request\-::get\-Frame\-Data} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRemoteAtCommandRequest_a0e576cf564ebd5a82cb2ed05239a856a}
+\-Starting after the frame id (pos = 0) and up to but not including the checksum \-Note\-: \-Unlike \-Digi's definition of the frame data, this does not start with the \-A\-P\-I \-I\-D. \-The reason for this is the \-A\-P\-I \-I\-D and \-Frame \-I\-D are common to all requests, whereas my definition of frame data is only the \-A\-P\-I specific data. 
+
+\-Reimplemented from \hyperlink{classAtCommandRequest_aa4fc8f0c8404172cd5532f3d8e5564f2}{\-At\-Command\-Request}.
+
+\hypertarget{classRemoteAtCommandRequest_a1d78334a8924b0a0e06de6ef3a09c24f}{\index{\-Remote\-At\-Command\-Request@{\-Remote\-At\-Command\-Request}!get\-Frame\-Data\-Length@{get\-Frame\-Data\-Length}}
+\index{get\-Frame\-Data\-Length@{get\-Frame\-Data\-Length}!RemoteAtCommandRequest@{\-Remote\-At\-Command\-Request}}
+\subsubsection[{get\-Frame\-Data\-Length}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-Remote\-At\-Command\-Request\-::get\-Frame\-Data\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRemoteAtCommandRequest_a1d78334a8924b0a0e06de6ef3a09c24f}
+\-Returns the size of the api frame (not including frame id or api id or checksum). 
+
+\-Reimplemented from \hyperlink{classAtCommandRequest_aad12b8357e63fca9e95b6731a4bfda0d}{\-At\-Command\-Request}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-X\-Bee.\-h\item 
+\-X\-Bee.\-cpp\end{DoxyCompactItemize}

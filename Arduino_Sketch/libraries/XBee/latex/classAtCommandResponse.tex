@@ -1,0 +1,93 @@
+\hypertarget{classAtCommandResponse}{\section{\-At\-Command\-Response \-Class \-Reference}
+\label{classAtCommandResponse}\index{\-At\-Command\-Response@{\-At\-Command\-Response}}
+}
+
+
+{\ttfamily \#include $<$\-X\-Bee.\-h$>$}
+
+\-Inheritance diagram for \-At\-Command\-Response\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classAtCommandResponse}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t $\ast$ \hyperlink{classAtCommandResponse_a20f1bf08ba77f2bc74f009318a6fd133}{get\-Command} ()
+\item 
+uint8\-\_\-t \hyperlink{classAtCommandResponse_a340822cacf6eed3ef29955dc9610c09f}{get\-Status} ()
+\item 
+uint8\-\_\-t $\ast$ \hyperlink{classAtCommandResponse_ad1e2a0b6f8988536c570b116f103e7f9}{get\-Value} ()
+\item 
+uint8\-\_\-t \hyperlink{classAtCommandResponse_ad7d6159fa1777144e94a9ccfeaf83662}{get\-Value\-Length} ()
+\item 
+bool \hyperlink{classAtCommandResponse_ab606b3dc93f809b828b54e98a79711d8}{is\-Ok} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Represents an \-A\-T \-Command \-R\-X packet 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classAtCommandResponse_a20f1bf08ba77f2bc74f009318a6fd133}{\index{\-At\-Command\-Response@{\-At\-Command\-Response}!get\-Command@{get\-Command}}
+\index{get\-Command@{get\-Command}!AtCommandResponse@{\-At\-Command\-Response}}
+\subsubsection[{get\-Command}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t $\ast$ {\bf \-At\-Command\-Response\-::get\-Command} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAtCommandResponse_a20f1bf08ba77f2bc74f009318a6fd133}
+\-Returns an array containing the two character command 
+
+\-Reimplemented in \hyperlink{classRemoteAtCommandResponse_a6d26d626de8b8d0eaf8241b92ff39f28}{\-Remote\-At\-Command\-Response}.
+
+\hypertarget{classAtCommandResponse_a340822cacf6eed3ef29955dc9610c09f}{\index{\-At\-Command\-Response@{\-At\-Command\-Response}!get\-Status@{get\-Status}}
+\index{get\-Status@{get\-Status}!AtCommandResponse@{\-At\-Command\-Response}}
+\subsubsection[{get\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-At\-Command\-Response\-::get\-Status} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAtCommandResponse_a340822cacf6eed3ef29955dc9610c09f}
+\-Returns the command status code. \-Zero represents a successful command 
+
+\-Reimplemented in \hyperlink{classRemoteAtCommandResponse_afc1b15612ea780c10dc1f33754868548}{\-Remote\-At\-Command\-Response}.
+
+\hypertarget{classAtCommandResponse_ad1e2a0b6f8988536c570b116f103e7f9}{\index{\-At\-Command\-Response@{\-At\-Command\-Response}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!AtCommandResponse@{\-At\-Command\-Response}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t $\ast$ {\bf \-At\-Command\-Response\-::get\-Value} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAtCommandResponse_ad1e2a0b6f8988536c570b116f103e7f9}
+\-Returns an array containing the command value. \-This is only applicable to query commands. 
+
+\-Reimplemented in \hyperlink{classRemoteAtCommandResponse_a3d72d768131c63271a62f75530efda29}{\-Remote\-At\-Command\-Response}.
+
+\hypertarget{classAtCommandResponse_ad7d6159fa1777144e94a9ccfeaf83662}{\index{\-At\-Command\-Response@{\-At\-Command\-Response}!get\-Value\-Length@{get\-Value\-Length}}
+\index{get\-Value\-Length@{get\-Value\-Length}!AtCommandResponse@{\-At\-Command\-Response}}
+\subsubsection[{get\-Value\-Length}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-At\-Command\-Response\-::get\-Value\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAtCommandResponse_ad7d6159fa1777144e94a9ccfeaf83662}
+\-Returns the length of the command value array. 
+
+\-Reimplemented in \hyperlink{classRemoteAtCommandResponse_a55cf17381e461b8de4a2d5459bfc964a}{\-Remote\-At\-Command\-Response}.
+
+\hypertarget{classAtCommandResponse_ab606b3dc93f809b828b54e98a79711d8}{\index{\-At\-Command\-Response@{\-At\-Command\-Response}!is\-Ok@{is\-Ok}}
+\index{is\-Ok@{is\-Ok}!AtCommandResponse@{\-At\-Command\-Response}}
+\subsubsection[{is\-Ok}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-At\-Command\-Response\-::is\-Ok} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAtCommandResponse_ab606b3dc93f809b828b54e98a79711d8}
+\-Returns true if status equals \-A\-T\-\_\-\-O\-K 
+
+\-Reimplemented in \hyperlink{classRemoteAtCommandResponse_a0cef7b3846d9c208ebd7ce4473aa90d3}{\-Remote\-At\-Command\-Response}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-X\-Bee.\-h\item 
+\-X\-Bee.\-cpp\end{DoxyCompactItemize}

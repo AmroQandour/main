@@ -1,0 +1,102 @@
+\hypertarget{classXBeeRequest}{\section{\-X\-Bee\-Request \-Class \-Reference}
+\label{classXBeeRequest}\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}}
+}
+
+
+{\ttfamily \#include $<$\-X\-Bee.\-h$>$}
+
+\-Inheritance diagram for \-X\-Bee\-Request\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.441860cm]{classXBeeRequest}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classXBeeRequest_af80fd559cab746ab8573087cddda71a2}{\-X\-Bee\-Request} (uint8\-\_\-t api\-Id, uint8\-\_\-t frame\-Id)
+\item 
+void \hyperlink{classXBeeRequest_aed1724c11e710217807c971e40105c86}{set\-Frame\-Id} (uint8\-\_\-t frame\-Id)
+\item 
+uint8\-\_\-t \hyperlink{classXBeeRequest_a20394c7ea4666224c50bef25cc0cd836}{get\-Frame\-Id} ()
+\item 
+uint8\-\_\-t \hyperlink{classXBeeRequest_a746d0373c9fb6ed0ff8b7e04f5fb12c9}{get\-Api\-Id} ()
+\item 
+virtual uint8\-\_\-t \hyperlink{classXBeeRequest_ad5b998cd95a570bdaa4d74c6c8790d94}{get\-Frame\-Data} (uint8\-\_\-t pos)=0
+\item 
+virtual uint8\-\_\-t \hyperlink{classXBeeRequest_a03b6c558db5836fa7167c0fba7405642}{get\-Frame\-Data\-Length} ()=0
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classXBeeRequest_aee756672e79dbb05358187cb53f61b1a}{void {\bfseries set\-Api\-Id} (uint8\-\_\-t api\-Id)}\label{classXBeeRequest_aee756672e79dbb05358187cb53f61b1a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Super class of all \hyperlink{classXBee}{\-X\-Bee} requests (\-T\-X packets) \-Users should never create an instance of this class; instead use an subclass of this class \-It is recommended to reuse \-Subclasses of the class to conserve memory 
+
+\-This class allocates a buffer to 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classXBeeRequest_af80fd559cab746ab8573087cddda71a2}{\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}!\-X\-Bee\-Request@{\-X\-Bee\-Request}}
+\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}!XBeeRequest@{\-X\-Bee\-Request}}
+\subsubsection[{\-X\-Bee\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-X\-Bee\-Request\-::\-X\-Bee\-Request} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{api\-Id, }
+\item[{uint8\-\_\-t}]{frame\-Id}
+\end{DoxyParamCaption}
+)}}\label{classXBeeRequest_af80fd559cab746ab8573087cddda71a2}
+\-Constructor \-T\-O\-D\-O make protected 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classXBeeRequest_a746d0373c9fb6ed0ff8b7e04f5fb12c9}{\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}!get\-Api\-Id@{get\-Api\-Id}}
+\index{get\-Api\-Id@{get\-Api\-Id}!XBeeRequest@{\-X\-Bee\-Request}}
+\subsubsection[{get\-Api\-Id}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-X\-Bee\-Request\-::get\-Api\-Id} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classXBeeRequest_a746d0373c9fb6ed0ff8b7e04f5fb12c9}
+\-Returns the \-A\-P\-I id \hypertarget{classXBeeRequest_ad5b998cd95a570bdaa4d74c6c8790d94}{\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}!get\-Frame\-Data@{get\-Frame\-Data}}
+\index{get\-Frame\-Data@{get\-Frame\-Data}!XBeeRequest@{\-X\-Bee\-Request}}
+\subsubsection[{get\-Frame\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint8\-\_\-t {\bf \-X\-Bee\-Request\-::get\-Frame\-Data} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classXBeeRequest_ad5b998cd95a570bdaa4d74c6c8790d94}
+\-Starting after the frame id (pos = 0) and up to but not including the checksum \-Note\-: \-Unlike \-Digi's definition of the frame data, this does not start with the \-A\-P\-I \-I\-D. \-The reason for this is the \-A\-P\-I \-I\-D and \-Frame \-I\-D are common to all requests, whereas my definition of frame data is only the \-A\-P\-I specific data. 
+
+\-Implemented in \hyperlink{classRemoteAtCommandRequest_a0e576cf564ebd5a82cb2ed05239a856a}{\-Remote\-At\-Command\-Request}, \hyperlink{classAtCommandRequest_aa4fc8f0c8404172cd5532f3d8e5564f2}{\-At\-Command\-Request}, \hyperlink{classZBTxRequest_ac81e09dfbf7aefbdf7f8b4838b643c5c}{\-Z\-B\-Tx\-Request}, \hyperlink{classTx64Request_afe3662433da85acd21f8a3d90844a084}{\-Tx64\-Request}, and \hyperlink{classTx16Request_af5ffbc2164e766d96f54c723996fd389}{\-Tx16\-Request}.
+
+\hypertarget{classXBeeRequest_a03b6c558db5836fa7167c0fba7405642}{\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}!get\-Frame\-Data\-Length@{get\-Frame\-Data\-Length}}
+\index{get\-Frame\-Data\-Length@{get\-Frame\-Data\-Length}!XBeeRequest@{\-X\-Bee\-Request}}
+\subsubsection[{get\-Frame\-Data\-Length}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint8\-\_\-t {\bf \-X\-Bee\-Request\-::get\-Frame\-Data\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classXBeeRequest_a03b6c558db5836fa7167c0fba7405642}
+\-Returns the size of the api frame (not including frame id or api id or checksum). 
+
+\-Implemented in \hyperlink{classRemoteAtCommandRequest_a1d78334a8924b0a0e06de6ef3a09c24f}{\-Remote\-At\-Command\-Request}, \hyperlink{classAtCommandRequest_aad12b8357e63fca9e95b6731a4bfda0d}{\-At\-Command\-Request}, \hyperlink{classZBTxRequest_a8e6914c1f556981a0f863c57c57d053b}{\-Z\-B\-Tx\-Request}, \hyperlink{classTx64Request_afadc1e07718a62d6c5a75a4bb07dfaae}{\-Tx64\-Request}, and \hyperlink{classTx16Request_a9a1ddfb380e72ecc09a024c6de6cdf8e}{\-Tx16\-Request}.
+
+\hypertarget{classXBeeRequest_a20394c7ea4666224c50bef25cc0cd836}{\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}!get\-Frame\-Id@{get\-Frame\-Id}}
+\index{get\-Frame\-Id@{get\-Frame\-Id}!XBeeRequest@{\-X\-Bee\-Request}}
+\subsubsection[{get\-Frame\-Id}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-X\-Bee\-Request\-::get\-Frame\-Id} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classXBeeRequest_a20394c7ea4666224c50bef25cc0cd836}
+\-Returns the frame id \hypertarget{classXBeeRequest_aed1724c11e710217807c971e40105c86}{\index{\-X\-Bee\-Request@{\-X\-Bee\-Request}!set\-Frame\-Id@{set\-Frame\-Id}}
+\index{set\-Frame\-Id@{set\-Frame\-Id}!XBeeRequest@{\-X\-Bee\-Request}}
+\subsubsection[{set\-Frame\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-X\-Bee\-Request\-::set\-Frame\-Id} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{frame\-Id}
+\end{DoxyParamCaption}
+)}}\label{classXBeeRequest_aed1724c11e710217807c971e40105c86}
+\-Sets the frame id. \-Must be between 1 and 255 inclusive to get a \-T\-X status response. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-X\-Bee.\-h\item 
+\-X\-Bee.\-cpp\end{DoxyCompactItemize}

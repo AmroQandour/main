@@ -1,0 +1,109 @@
+\hypertarget{classZBTxRequest}{\section{\-Z\-B\-Tx\-Request \-Class \-Reference}
+\label{classZBTxRequest}\index{\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}}
+}
+
+
+{\ttfamily \#include $<$\-X\-Bee.\-h$>$}
+
+\-Inheritance diagram for \-Z\-B\-Tx\-Request\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classZBTxRequest}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classZBTxRequest_a47d9d87e0ab2e155ff3408acea5dcf7c}{\-Z\-B\-Tx\-Request} (\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \&addr64, uint8\-\_\-t $\ast$payload, uint8\-\_\-t payload\-Length)
+\item 
+\hypertarget{classZBTxRequest_a98f109c346e669049697665745605e67}{{\bfseries \-Z\-B\-Tx\-Request} (\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \&addr64, uint16\-\_\-t addr16, uint8\-\_\-t broadcast\-Radius, uint8\-\_\-t option, uint8\-\_\-t $\ast$payload, uint8\-\_\-t payload\-Length, uint8\-\_\-t frame\-Id)}\label{classZBTxRequest_a98f109c346e669049697665745605e67}
+
+\item 
+\hyperlink{classZBTxRequest_a410499f31a049f0bd4bbc8299ec74e24}{\-Z\-B\-Tx\-Request} ()
+\item 
+\hypertarget{classZBTxRequest_adbd44bb9801c9cba0c9ea4e87ed8efa5}{\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \& {\bfseries get\-Address64} ()}\label{classZBTxRequest_adbd44bb9801c9cba0c9ea4e87ed8efa5}
+
+\item 
+\hypertarget{classZBTxRequest_ac75b0c6db3b6c9b54c3df2891b267950}{uint16\-\_\-t {\bfseries get\-Address16} ()}\label{classZBTxRequest_ac75b0c6db3b6c9b54c3df2891b267950}
+
+\item 
+\hypertarget{classZBTxRequest_a6c4a33cab93ff1d18703c8ddd4db4056}{uint8\-\_\-t {\bfseries get\-Broadcast\-Radius} ()}\label{classZBTxRequest_a6c4a33cab93ff1d18703c8ddd4db4056}
+
+\item 
+\hypertarget{classZBTxRequest_a4b97981c2a07afdeeacff09e479b7d45}{uint8\-\_\-t {\bfseries get\-Option} ()}\label{classZBTxRequest_a4b97981c2a07afdeeacff09e479b7d45}
+
+\item 
+\hypertarget{classZBTxRequest_a32725cca51a846b716308497d066b7a7}{void {\bfseries set\-Address64} (\hyperlink{classXBeeAddress64}{\-X\-Bee\-Address64} \&addr64)}\label{classZBTxRequest_a32725cca51a846b716308497d066b7a7}
+
+\item 
+\hypertarget{classZBTxRequest_aa1ae1761a27f335d353428de9c986aff}{void {\bfseries set\-Address16} (uint16\-\_\-t addr16)}\label{classZBTxRequest_aa1ae1761a27f335d353428de9c986aff}
+
+\item 
+\hypertarget{classZBTxRequest_a2d2825234b6d42385998df927d0fe0cb}{void {\bfseries set\-Broadcast\-Radius} (uint8\-\_\-t broadcast\-Radius)}\label{classZBTxRequest_a2d2825234b6d42385998df927d0fe0cb}
+
+\item 
+\hypertarget{classZBTxRequest_a32b2ea4b2c457396a7463e2add7e14f6}{void {\bfseries set\-Option} (uint8\-\_\-t option)}\label{classZBTxRequest_a32b2ea4b2c457396a7463e2add7e14f6}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{classZBTxRequest_ac81e09dfbf7aefbdf7f8b4838b643c5c}{get\-Frame\-Data} (uint8\-\_\-t pos)
+\item 
+uint8\-\_\-t \hyperlink{classZBTxRequest_a8e6914c1f556981a0f863c57c57d053b}{get\-Frame\-Data\-Length} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Represents a \-Series 2 \-T\-X packet that corresponds to \-Api \-Id\-: \-Z\-B\-\_\-\-T\-X\-\_\-\-R\-E\-Q\-U\-E\-S\-T
+
+\-Be careful not to send a data array larger than the max packet size of your radio. \-This class does not perform any validation of packet size and there will be no indication if the packet is too large, other than you will not get a \-T\-X \-Status response. \-The datasheet says 72 bytes is the maximum for \-Z\-Net firmware and \-Z\-B \-Pro firmware provides the \-A\-T\-N\-P command to get the max supported payload size. \-This command is useful since the maximum payload size varies according to certain settings, such as encryption. \-Z\-B \-Pro firmware provides a \-P\-A\-Y\-L\-O\-A\-D\-\_\-\-T\-O\-O\-\_\-\-L\-A\-R\-G\-E that is returned if payload size exceeds the maximum. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classZBTxRequest_a47d9d87e0ab2e155ff3408acea5dcf7c}{\index{\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}!\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}}
+\index{\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}!ZBTxRequest@{\-Z\-B\-Tx\-Request}}
+\subsubsection[{\-Z\-B\-Tx\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Z\-B\-Tx\-Request\-::\-Z\-B\-Tx\-Request} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-X\-Bee\-Address64} \&}]{addr64, }
+\item[{uint8\-\_\-t $\ast$}]{payload, }
+\item[{uint8\-\_\-t}]{payload\-Length}
+\end{DoxyParamCaption}
+)}}\label{classZBTxRequest_a47d9d87e0ab2e155ff3408acea5dcf7c}
+\-Creates a unicast \hyperlink{classZBTxRequest}{\-Z\-B\-Tx\-Request} with the \-A\-C\-K option and \-D\-E\-F\-A\-U\-L\-T\-\_\-\-F\-R\-A\-M\-E\-\_\-\-I\-D \hypertarget{classZBTxRequest_a410499f31a049f0bd4bbc8299ec74e24}{\index{\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}!\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}}
+\index{\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}!ZBTxRequest@{\-Z\-B\-Tx\-Request}}
+\subsubsection[{\-Z\-B\-Tx\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Z\-B\-Tx\-Request\-::\-Z\-B\-Tx\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classZBTxRequest_a410499f31a049f0bd4bbc8299ec74e24}
+\-Creates a default instance of this class. \-At a minimum you must specify a payload, payload length and a destination address before sending this request. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classZBTxRequest_ac81e09dfbf7aefbdf7f8b4838b643c5c}{\index{\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}!get\-Frame\-Data@{get\-Frame\-Data}}
+\index{get\-Frame\-Data@{get\-Frame\-Data}!ZBTxRequest@{\-Z\-B\-Tx\-Request}}
+\subsubsection[{get\-Frame\-Data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-Z\-B\-Tx\-Request\-::get\-Frame\-Data} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{classZBTxRequest_ac81e09dfbf7aefbdf7f8b4838b643c5c}
+\-Starting after the frame id (pos = 0) and up to but not including the checksum \-Note\-: \-Unlike \-Digi's definition of the frame data, this does not start with the \-A\-P\-I \-I\-D. \-The reason for this is the \-A\-P\-I \-I\-D and \-Frame \-I\-D are common to all requests, whereas my definition of frame data is only the \-A\-P\-I specific data. 
+
+\-Implements \hyperlink{classXBeeRequest_ad5b998cd95a570bdaa4d74c6c8790d94}{\-X\-Bee\-Request}.
+
+\hypertarget{classZBTxRequest_a8e6914c1f556981a0f863c57c57d053b}{\index{\-Z\-B\-Tx\-Request@{\-Z\-B\-Tx\-Request}!get\-Frame\-Data\-Length@{get\-Frame\-Data\-Length}}
+\index{get\-Frame\-Data\-Length@{get\-Frame\-Data\-Length}!ZBTxRequest@{\-Z\-B\-Tx\-Request}}
+\subsubsection[{get\-Frame\-Data\-Length}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-Z\-B\-Tx\-Request\-::get\-Frame\-Data\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{classZBTxRequest_a8e6914c1f556981a0f863c57c57d053b}
+\-Returns the size of the api frame (not including frame id or api id or checksum). 
+
+\-Implements \hyperlink{classXBeeRequest_a03b6c558db5836fa7167c0fba7405642}{\-X\-Bee\-Request}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-X\-Bee.\-h\item 
+\-X\-Bee.\-cpp\end{DoxyCompactItemize}

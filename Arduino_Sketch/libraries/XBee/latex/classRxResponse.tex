@@ -1,0 +1,69 @@
+\hypertarget{classRxResponse}{\section{\-Rx\-Response \-Class \-Reference}
+\label{classRxResponse}\index{\-Rx\-Response@{\-Rx\-Response}}
+}
+
+
+{\ttfamily \#include $<$\-X\-Bee.\-h$>$}
+
+\-Inheritance diagram for \-Rx\-Response\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.166667cm]{classRxResponse}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classRxResponse_a43fa3b1d0f4df2491496d10d7981799e}{uint8\-\_\-t {\bfseries get\-Rssi} ()}\label{classRxResponse_a43fa3b1d0f4df2491496d10d7981799e}
+
+\item 
+\hypertarget{classRxResponse_a1bd75535804b6c1ff64a9ecd8aba6fcd}{uint8\-\_\-t {\bfseries get\-Option} ()}\label{classRxResponse_a1bd75535804b6c1ff64a9ecd8aba6fcd}
+
+\item 
+\hypertarget{classRxResponse_ac85e73bfa6656b2c96275101e6fdea6e}{bool {\bfseries is\-Address\-Broadcast} ()}\label{classRxResponse_ac85e73bfa6656b2c96275101e6fdea6e}
+
+\item 
+\hypertarget{classRxResponse_a1b492ad1ff869b00903efc4ff571a006}{bool {\bfseries is\-Pan\-Broadcast} ()}\label{classRxResponse_a1b492ad1ff869b00903efc4ff571a006}
+
+\item 
+uint8\-\_\-t \hyperlink{classRxResponse_add3478a1ce5667aad315f6a6c218011a}{get\-Data\-Length} ()
+\item 
+uint8\-\_\-t \hyperlink{classRxResponse_a37fd3ee455f2157fa3894e710e668409}{get\-Data\-Offset} ()
+\item 
+\hypertarget{classRxResponse_ac0e5dc8fc16aa3004b5c59a8a306e00e}{virtual uint8\-\_\-t {\bfseries get\-Rssi\-Offset} ()=0}\label{classRxResponse_ac0e5dc8fc16aa3004b5c59a8a306e00e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Represents a \-Series 1 \-R\-X packet 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classRxResponse_add3478a1ce5667aad315f6a6c218011a}{\index{\-Rx\-Response@{\-Rx\-Response}!get\-Data\-Length@{get\-Data\-Length}}
+\index{get\-Data\-Length@{get\-Data\-Length}!RxResponse@{\-Rx\-Response}}
+\subsubsection[{get\-Data\-Length}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-Rx\-Response\-::get\-Data\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRxResponse_add3478a1ce5667aad315f6a6c218011a}
+\-Returns the length of the payload 
+
+\-Implements \hyperlink{classRxDataResponse_a5845e6a0719fd0bf52675e47053a704e}{\-Rx\-Data\-Response}.
+
+\hypertarget{classRxResponse_a37fd3ee455f2157fa3894e710e668409}{\index{\-Rx\-Response@{\-Rx\-Response}!get\-Data\-Offset@{get\-Data\-Offset}}
+\index{get\-Data\-Offset@{get\-Data\-Offset}!RxResponse@{\-Rx\-Response}}
+\subsubsection[{get\-Data\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-Rx\-Response\-::get\-Data\-Offset} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{classRxResponse_a37fd3ee455f2157fa3894e710e668409}
+\-Returns the position in the frame data where the data begins 
+
+\-Implements \hyperlink{classRxDataResponse_a9e4b6bf4f1bfd9ccec45d190a204f61a}{\-Rx\-Data\-Response}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-X\-Bee.\-h\item 
+\-X\-Bee.\-cpp\end{DoxyCompactItemize}

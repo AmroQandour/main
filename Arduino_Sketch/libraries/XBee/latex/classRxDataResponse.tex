@@ -1,0 +1,72 @@
+\hypertarget{classRxDataResponse}{\section{\-Rx\-Data\-Response \-Class \-Reference}
+\label{classRxDataResponse}\index{\-Rx\-Data\-Response@{\-Rx\-Data\-Response}}
+}
+
+
+{\ttfamily \#include $<$\-X\-Bee.\-h$>$}
+
+\-Inheritance diagram for \-Rx\-Data\-Response\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.166667cm]{classRxDataResponse}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{classRxDataResponse_a28db0306283f4191e4fc8a5b049486f5}{get\-Data} (int index)
+\item 
+uint8\-\_\-t $\ast$ \hyperlink{classRxDataResponse_ae0f858fe479a07c7122a8d414c60517e}{get\-Data} ()
+\item 
+virtual uint8\-\_\-t \hyperlink{classRxDataResponse_a5845e6a0719fd0bf52675e47053a704e}{get\-Data\-Length} ()=0
+\item 
+virtual uint8\-\_\-t \hyperlink{classRxDataResponse_a9e4b6bf4f1bfd9ccec45d190a204f61a}{get\-Data\-Offset} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Common functionality for both \-Series 1 and 2 data \-R\-X data packets 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classRxDataResponse_a28db0306283f4191e4fc8a5b049486f5}{\index{\-Rx\-Data\-Response@{\-Rx\-Data\-Response}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!RxDataResponse@{\-Rx\-Data\-Response}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf \-Rx\-Data\-Response\-::get\-Data} (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classRxDataResponse_a28db0306283f4191e4fc8a5b049486f5}
+\-Returns the specified index of the payload. \-The index may be 0 to \hyperlink{classRxDataResponse_a5845e6a0719fd0bf52675e47053a704e}{get\-Data\-Length()} -\/ 1 \-This method is deprecated; use uint8\-\_\-t$\ast$ \hyperlink{classRxDataResponse_ae0f858fe479a07c7122a8d414c60517e}{get\-Data()} \hypertarget{classRxDataResponse_ae0f858fe479a07c7122a8d414c60517e}{\index{\-Rx\-Data\-Response@{\-Rx\-Data\-Response}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!RxDataResponse@{\-Rx\-Data\-Response}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t $\ast$ {\bf \-Rx\-Data\-Response\-::get\-Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRxDataResponse_ae0f858fe479a07c7122a8d414c60517e}
+\-Returns the payload array. \-This may be accessed from index 0 to \hyperlink{classRxDataResponse_a5845e6a0719fd0bf52675e47053a704e}{get\-Data\-Length()} -\/ 1 \hypertarget{classRxDataResponse_a5845e6a0719fd0bf52675e47053a704e}{\index{\-Rx\-Data\-Response@{\-Rx\-Data\-Response}!get\-Data\-Length@{get\-Data\-Length}}
+\index{get\-Data\-Length@{get\-Data\-Length}!RxDataResponse@{\-Rx\-Data\-Response}}
+\subsubsection[{get\-Data\-Length}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint8\-\_\-t {\bf \-Rx\-Data\-Response\-::get\-Data\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classRxDataResponse_a5845e6a0719fd0bf52675e47053a704e}
+\-Returns the length of the payload 
+
+\-Implemented in \hyperlink{classRxResponse_add3478a1ce5667aad315f6a6c218011a}{\-Rx\-Response}, and \hyperlink{classZBRxResponse_a9d2b73060d611bbdd581e0ceb195fd31}{\-Z\-B\-Rx\-Response}.
+
+\hypertarget{classRxDataResponse_a9e4b6bf4f1bfd9ccec45d190a204f61a}{\index{\-Rx\-Data\-Response@{\-Rx\-Data\-Response}!get\-Data\-Offset@{get\-Data\-Offset}}
+\index{get\-Data\-Offset@{get\-Data\-Offset}!RxDataResponse@{\-Rx\-Data\-Response}}
+\subsubsection[{get\-Data\-Offset}]{\setlength{\rightskip}{0pt plus 5cm}virtual uint8\-\_\-t {\bf \-Rx\-Data\-Response\-::get\-Data\-Offset} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{classRxDataResponse_a9e4b6bf4f1bfd9ccec45d190a204f61a}
+\-Returns the position in the frame data where the data begins 
+
+\-Implemented in \hyperlink{classRxResponse_a37fd3ee455f2157fa3894e710e668409}{\-Rx\-Response}, and \hyperlink{classZBRxResponse_ad54e6ff3008f79d0ed32a78cc3d69151}{\-Z\-B\-Rx\-Response}.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-X\-Bee.\-h\item 
+\-X\-Bee.\-cpp\end{DoxyCompactItemize}
